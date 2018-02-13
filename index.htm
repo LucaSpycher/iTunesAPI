@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>iTunes API</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="iTunesJs.js"></script>
     <link rel="stylesheet" href="iTunesStyle.css">
@@ -10,10 +10,17 @@
 <body>
 
 <nav>
-    <input id="searchField" type="text">
-    <button id="searchButton" onclick="doIt()">Search</button>
+    <div id="searchContainer">
+        <input id="searchField" type="text" placeholder="Search for an artist">
+        <button id="searchButton" onclick="doIt()"><img src="https://www.egnyte.co.uk/assets/2017/images/magnifying-glass.svg"></button>
+    </div>
+    <span>
+        Number of Results:
+        <input type="number" id="songLimit" max="200" min="0">
+    </span>
 </nav>
 <div id="searchOutput"></div>
 
+<a href="#"><img id="toTop" src="http://clipart.info/images/minicovers/1484942341ios-emoji-top-with-upwards-arrow-above.png"></a>
 </body>
 </html>

@@ -2,9 +2,104 @@
     box-sizing: border-box;
 }
 
-th {
-    text-align: left;
+nav {
+    overflow: auto;
+    text-align: center;
+}
+
+div {
+    overflow: auto;
+}
+
+button > img {
+    margin-top: 1px;
+    height: 22px;
+    width: 18px;
+}
+
+#searchContainer {
+    padding: 5px;
+    position: relative;
+    width: 75%;
+    max-width: 538px;
+    margin: 0 auto;
+}
+
+#searchContainer > * {
+    float: left;
+    border: 1px rgba(0, 0, 0, 0.27) solid;
+    height: 30px;
+}
+
+#searchContainer input {
+    width: 80%;
+    padding: 5px;
+}
+
+#searchButton {
+    width: 20%;
+    border-radius: 0;
+    background-color: deepskyblue;
+    color: white;
+    overflow: hidden;
+    border-left: hidden;
+    z-index: -1;
+}
+
+#searchButton:hover {
+    background-color: #00a8e6;
+}
+
+table {
+    width: 75%;
+    margin: 20px auto;
+}
+
+td {
+    border-top: solid #989898 1px;
+    border-collapse: collapse;
+    height: 34px;
+    vertical-align: middle;
 }
 
 tr {
+    height: 30px;
+}
+
+#trackName {
+    float: left;
+}
+
+#trackName, #artist {
+    font-weight: normal;
+    font-family: Verdana, serif;
+}
+
+.number{
+    margin-right: 10px;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.artistDiv, #artistDiv {
+    width: 25%;
+    float: right;
+    text-align: center;
+}
+
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 5%;
+    height: 50px;
+}
+
+nav span {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'american typewriter', serif;
+    font-size: 12pt;
 }
