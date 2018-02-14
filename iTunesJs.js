@@ -47,7 +47,7 @@ function process(res) {
     html += '</table>';
     $('#searchOutput').append(html).find('tr').hide();
     for(var l = 0; l < $('.tableRow').length+1; l++) {
-        $("tr:nth-of-type("+ (l+1) +")").delay(25 * l).fadeIn(100);
+        $("tr:nth-of-type("+ (l+1) +")").delay(10 * l).fadeIn(100);
     }
     if($('.tableRow').length == 0) {
         var message = $('<p style="text-align: center">no results</p>');
